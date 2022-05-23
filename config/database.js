@@ -16,7 +16,7 @@ module.exports = {
   | interacting with SQL databases.
   |
   */
-  connection: Env.get('DB_CONNECTION', 'sqlite'),
+  connection: Env.get('DB_CONNECTION', 'pg'),
 
   /*
   |--------------------------------------------------------------------------
@@ -51,11 +51,11 @@ module.exports = {
   mysql: {
     client: 'mysql',
     connection: {
-      host: Env.get('DB_HOST', 'localhost'),
-      port: Env.get('DB_PORT', ''),
-      user: Env.get('DB_USER', 'root'),
-      password: Env.get('DB_PASSWORD', ''),
-      database: Env.get('DB_DATABASE', 'adonis')
+      host: Env.get('DB_HOST', 'ec2-34-201-95-176.compute-1.amazonaws.com'),
+      port: Env.get('DB_PORT', '5432'),
+      user: Env.get('DB_USER', 'cjlqtohojvcqbn'),
+      password: Env.get('DB_PASSWORD', '393359afb65a8cd3a319f968c30bb10fcf47c6660d9c79cc08723ef1ed6d461f'),
+      database: Env.get('DB_DATABASE', 'daulgkjmqatt00')
     },
     debug: Env.get('DB_DEBUG', false)
   },
@@ -73,11 +73,11 @@ module.exports = {
   pg: {
     client: 'pg',
     connection: {
-      host: Env.get('DB_HOST', 'localhost'),
-      port: Env.get('DB_PORT', ''),
-      user: Env.get('DB_USER', 'root'),
-      password: Env.get('DB_PASSWORD', ''),
-      database: Env.get('DB_DATABASE', 'adonis')
+      host: Env.get('DB_HOST', 'ec2-34-201-95-176.compute-1.amazonaws.com'),
+      port: Env.get('DB_PORT', '5432'),
+      user: Env.get('DB_USER', 'cjlqtohojvcqbn'),
+      password: Env.get('DB_PASSWORD', '393359afb65a8cd3a319f968c30bb10fcf47c6660d9c79cc08723ef1ed6d461f'),
+      database: Env.get('DB_DATABASE', 'daulgkjmqatt00')
     },
     debug: Env.get('DB_DEBUG', false)
   }
